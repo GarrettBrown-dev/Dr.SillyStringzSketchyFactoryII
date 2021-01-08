@@ -1,8 +1,8 @@
-# _Dr. SillyStringz Factory_
+# _Dr.SillyStringz Factory_
 
 #### _An app to keep track of the Doctor's Engineers and Machines. Created 1/8/2021_
 
-#### By _**Garrett Dean Brown**_
+#### Created By _**Garrett Dean Brown**_
 
 ## Description
 
