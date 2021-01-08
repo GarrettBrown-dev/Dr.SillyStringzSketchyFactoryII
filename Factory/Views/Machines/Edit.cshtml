@@ -9,8 +9,10 @@
 {
     @Html.HiddenFor(model => model.MachineId)
     @Html.Label("Machine Name")
-    @Html.EditorFor(model => model.MachineName,
-        new {@required="required"})
+    @Html.EditorFor(model => model.MachineName, new {@required="required"})
+
+    @Html.Label("Machine Status")
+    @Html.EditorFor(model => model.MachineStatus, new {@required="required"})
 
     <input type="submit" value="Save Changes" />
 }

@@ -8,8 +8,10 @@
 @using (Html.BeginForm())
 {
     @Html.Label("Machine name")
-    @Html.TextBoxFor(model => model.MachineName,
-        new {@required="required"})
+    @Html.TextBoxFor(model => model.MachineName, new {@required="required"})
+
+    @Html.Label("Machine Status (Functioning, Malfunctioning, Repairs Ongoing)")
+    @Html.TextBoxFor(model => model.MachineStatus, new {@required="required"})
 
     <input type="submit" value="Add a new Machine" />
 }

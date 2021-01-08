@@ -9,8 +9,10 @@
 {
 
     @Html.Label("Engineer Name")
-    @Html.TextBoxFor(model => model.EngineerName,
-        new {@required="required"})
+    @Html.TextBoxFor(model => model.EngineerName, new {@required="required"})
+
+    @Html.Label("Engineer Status: Stand-By, Busy")
+    @Html.TextBoxFor(model => model.EngineerStatus, new {@required="required"})
 
     <input type="submit" value="Add Engineer" />
 }
