@@ -26,20 +26,21 @@ A website specially made for the infamous Dr.SillyStringz to keep track of his e
 ## Machine Object Properties
 * Id
 * Name
+* Status
 * Assigned Engineer
 --------
 
 ## Engineer Object Properties
 * Id
 * Name
+* Status
 * Licensed Machine
 
-### Specs
-| Spec | Input | Output |
-| :-------------     | :------------- | :------------- |
-|  1. Site has a splash page with for the factory | dotnet run  |  Splash Page |
-|  2. User should be able to enter a new Machine as well as a new Engineer for that particular machine.| user clicks "New Machine/Engineer" | User can add necessary details to Machine and Engineer |
-|  3. User should be able to view previous Machines and Engineerss.| user clicks "Bumfulguster" | "Bumfulguster: Engineers: Blake Fixer" | 
+* Cloning options
+  * For cloning please use the following GitHub [tutorial](https://docs.github.com/en/enterprise/2.16/user/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+  * Place files into a single directory 
+  * Run GitBASH in directory
+  * Type "dotnet run" in GitBash to run the program
 
 ## Setup/Installation Requirements
 
@@ -47,6 +48,7 @@ A website specially made for the infamous Dr.SillyStringz to keep track of his e
   * Ensure Garrett_Brown.sql was downloaded
   * Create an appsettings.json file
   * add localhost port, database name (garrett_brown) and your mysql password. 
+  * navigate to Factory directory.
   * Run dotnet ef database update.
   * Enjoy, Doctor S!
 
@@ -54,14 +56,10 @@ A website specially made for the infamous Dr.SillyStringz to keep track of his e
   * Download files from GitHub repository by click Code and Download Zip
   * Extract files into a single directory 
   * Run GitBASH in directory
+  * Navigate to Factory directory.
   * Type "dotnet ef database update" in dotnet to run the program
   * Enjoy, Doctor S!
 
-* Cloning options
-  * For cloning please use the following GitHub [tutorial](https://docs.github.com/en/enterprise/2.16/user/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-  * Place files into a single directory 
-  * Run GitBASH in directory
-  * Type "dotnet run" in GitBash to run the program
 
 ## Known Bugs
 

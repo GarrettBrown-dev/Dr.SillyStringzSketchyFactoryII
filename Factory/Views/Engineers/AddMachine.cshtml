@@ -11,10 +11,10 @@
 {
     @Html.HiddenFor(model => model.EngineerId)
 
-    @Html.Label("Select Machine")
+    @Html.Label("Select Machine: ")
     @Html.DropDownList("MachineId")
 
-    <input type="submit" value="Save" class="btn btn-success btn-sm" />
+    <input type="submit" value="Save" class="btn btn-outline-warning btn-sm" />
 }
 <br>
-<p>@Html.ActionLink("Engineer roster", "Index", null, null, new {@class="btn btn-primary btn-sm"})</p>
+<p>@Html.ActionLink("Engineer roster", "Index", null, null, new {@class="btn btn-outline-warning btn-sm"})</p>

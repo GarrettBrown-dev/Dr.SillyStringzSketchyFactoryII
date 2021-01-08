@@ -11,10 +11,12 @@
     @Html.Label("Engineer Name: ")
     @Html.EditorFor(model => model.EngineerName, new {@required="required"})
 
+    <br>
+
     @Html.Label("Engineer Status: ")
     @Html.EditorFor(model => model.EngineerStatus, new {@required="required"})
 
     <input type="submit" value="Save Changes" class="btn btn-outline-warning btn-sm" />
 }
 
-<p>@Html.ActionLink("Back to engineer roster", "Index", null, null, new {@class="btn btn-primary btn-warning"})</p>
+<p>@Html.ActionLink("Back to Engineer roster", "Index", null, null, new {@class="btn btn-outline-warning btn-sm"})</p>
