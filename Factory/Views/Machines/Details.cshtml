@@ -9,6 +9,10 @@
 <h3>Name: @Html.DisplayFor(model => model.MachineName)</h3>
 <hr />
 
+<h3>Machine Status: @Html.DisplayFor(model => model.MachineStatus)</h3>
+
+<br>
+
 @if (@Model.Engineers.Count == 0)
 {
   <p>This machine is not assigned any Engineers for repairs.</p>

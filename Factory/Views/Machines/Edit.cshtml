@@ -8,14 +8,18 @@
 @using (Html.BeginForm())
 {
     @Html.HiddenFor(model => model.MachineId)
-    @Html.Label("Machine Name")
+    @Html.Label("Machine Name ")
     @Html.EditorFor(model => model.MachineName, new {@required="required"})
 
-    @Html.Label("Machine Status")
+    <br>
+
+    @Html.Label("Machine Status ")
     @Html.EditorFor(model => model.MachineStatus, new {@required="required"})
 
-    <input type="submit" value="Save Changes" />
+    <br>
+
+    <input type="submit" value="Save Changes" class="btn btn-outline-warning btn-sm" />
 }
 
 <hr />
-<p>@Html.ActionLink("Back to machines", "Index", null, null, new {@class="btn btn-primary btn-sm"})</p>
+<p>@Html.ActionLink("Back to machines", "Index", null, null, new {@class="btn btn-outline-warning btn-sm"})</p>

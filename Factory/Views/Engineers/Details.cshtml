@@ -14,12 +14,13 @@
 else
 {
   <h3>Machines this engineer is licensed to:</h3>
+  <br>
   <ul>
     @foreach (var join in Model.Machines)
     {
       @using (Html.BeginForm("DeleteMachine", "Engineers"))
       {
-      <li>@Html.ActionLink($"{join.Machine.MachineName}", "Details", "Machines", new { id = join.Machine.MachineId })     <input type="submit" value="Remove" class="btn btn-warning btn-sm" /></li>
+      <li>@Html.ActionLink($"{join.Machine.MachineName}", "Details", "Machines", new { id = join.Machine.MachineId })     <input type="submit" value="Remove" class="btn btn-outline-warning btn-sm" /></li>
       @Html.Hidden("engineerId", @join.EngineerId)
       @Html.Hidden("joinId", @join.MachineEngineerId)      
       }
@@ -28,7 +29,7 @@ else
 }
 
 <br>
-<p>@Html.ActionLink("Edit Engineer", "Edit", null, new { id = Model.EngineerId } , new {@class="btn btn-warning btn-sm"})</p>
-<p>@Html.ActionLink("Add a Machine", "AddMachine", "Engineers", new { id = Model.EngineerId } , new {@class="btn btn-warning btn-sm"})</p>
-<p>@Html.ActionLink("Delete this Engineer", "Delete", new { id = Model.EngineerId }, new {@class="btn btn-danger btn-sm"})</p>
-<p>@Html.ActionLink("Back to Engineer roster", "Index", null, null, new {@class="btn btn-warning btn-sm"})</p>
+<p>@Html.ActionLink("Edit Engineer", "Edit", null, new { id = Model.EngineerId } , new {@class="btn btn-outline-warning btn-sm"})</p>
+<p>@Html.ActionLink("Add a Machine", "AddMachine", "Engineers", new { id = Model.EngineerId } , new {@class="btn btn-outline-warning btn-sm"})</p>
+<p>@Html.ActionLink("Delete this Engineer", "Delete", new { id = Model.EngineerId }, new {@class="btn btn-outline-warning btn-sm"})</p>
+<p>@Html.ActionLink("Back to Engineer roster", "Index", null, null, new {@class="btn btn-outline-warning btn-sm"})</p>
