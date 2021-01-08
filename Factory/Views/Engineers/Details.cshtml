@@ -1,0 +1,34 @@
+@{
+  Layout = "_Layout";
+}
+@model Factory.Models.Engineer;
+<h1>Engineer information</h1>
+<hr />
+
+<h3>Name: @Html.DisplayFor(model => model.EngineerName) </h3>
+
+@if (@Model.Machines.Count == 0)
+{
+  <p>This Engineer is not licensed to work on any machines.</p>
+}
+else
+{
+  <h3>Machines this engineer is licensed to:</h3>
+  <ul>
+    @foreach (var join in Model.Machines)
+    {
+      @using (Html.BeginForm("DeleteMachine", "Engineers"))
+      {
+      <li>@Html.ActionLink($"{join.Machine.MachineName}", "Details", "Machines", new { id = join.Machine.MachineId })     <input type="submit" value="Remove" class="btn btn-warning btn-sm" /></li>
+      @Html.Hidden("engineerId", @join.EngineerId)
+      @Html.Hidden("joinId", @join.MachineEngineerId)      
+      }
+    }
+  </ul>
+}
+
+<br>
+<p>@Html.ActionLink("Edit Engineer", "Edit", null, new { id = Model.EngineerId } , new {@class="btn btn-success btn-sm"})</p>
+<p>@Html.ActionLink("Add a Machine", "AddMachine", "Engineers", new { id = Model.EngineerId } , new {@class="btn btn-success btn-sm"})</p>
+<p>@Html.ActionLink("Delete this Engineer", "Delete", new { id = Model.EngineerId }, new {@class="btn btn-danger btn-sm"})</p>
+<p>@Html.ActionLink("Back to Engineer roster", "Index", null, null, new {@class="btn btn-primary btn-sm"})</p>
