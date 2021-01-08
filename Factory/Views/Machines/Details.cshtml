@@ -30,11 +30,11 @@ else
 }
 
 <hr />
-<p>@Html.ActionLink("Edit this machine", "Edit", new { id = Model.MachineId }, new {@class="btn btn-success btn-sm"})
+<p>@Html.ActionLink("Edit this machine", "Edit", new { id = Model.MachineId }, new {@class="btn btn-outline-warning btn-sm"})
 </p>
 <div>
-  <p>@Html.ActionLink("Assign an engineer", "AddEngineer", "Machines", new { id = Model.MachineId } , new {@class="btn btn-success btn-sm"})</p>
+  <p>@Html.ActionLink("Assign an engineer", "AddEngineer", "Machines", new { id = Model.MachineId } , new {@class="btn btn-outline-warning btn-sm"})</p>
 </div>
-<p>@Html.ActionLink("Delete this machine", "Delete", new { id = Model.MachineId }, new {@class="btn btn-danger btn-sm"})
+<p>@Html.ActionLink("Delete this machine", "Delete", new { id = Model.MachineId }, new {@class="btn btn-outline-warning btn-sm"})
 </p>
-<p>@Html.ActionLink("Back to machines", "Index", null, null, new {@class="btn btn-primary btn-sm"})</p>
+<p>@Html.ActionLink("Back to machines", "Index", null, null, new {@class="btn btn-outline-warning btn-sm"})</p>

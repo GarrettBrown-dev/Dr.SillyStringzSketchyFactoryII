@@ -17,14 +17,14 @@ html {
 }
 
 .border-top {
-  border-top: 1px solid  yellow;
+  border-top: 1px solid  orange;
 }
 .border-bottom {
-  border-bottom: 1px solid  yellow;
+  border-bottom: 1px solid  orange;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem  yellow;
+  box-shadow: 0 .25rem .75rem  orange;
 }
 
 button.accept-policy {
@@ -46,7 +46,7 @@ body {
   background-size: cover;
   margin-bottom: 60px;
   background-color: black;
-  color:  yellow;
+  color:  orange;
   font-family: 'Courier New', Courier, monospace;
 }
 .footer {
@@ -62,7 +62,7 @@ body {
 
 .mainBox {
   background-color: rgb(46, 46, 46);
-  border: solid yellow;
+  border: solid orange;
   border-width: 1px;
   padding: 15px;
   font-family: 'Courier New', Courier, monospace;
@@ -70,12 +70,12 @@ body {
 
 .navBar {
   background-color: rgba(0, 0, 0, 0.324);
-  color: yellow;
+  color: orange;
   font-family: 'Courier New', Courier, monospace;
 }
 
 .nav-item {
-  color: yellow
+  color: orange
 }
 
 .nav-item:hover {
@@ -83,7 +83,7 @@ body {
 }
 
 a {
-  color:  yellow;
+  color:  rgb(255, 179, 38);
   font-size: 16px; 
   font-style: normal; 
   font-variant: normal; 
@@ -93,9 +93,9 @@ a {
 }
 
 hr {
-  color:  yellow;
+  color:  rgb(255, 179, 38);
   border-width: 1px;
-  border-color:  yellow;
+  border-color:  rgb(255, 179, 38);
   font-size: 16px; 
   font-style: normal; 
   font-variant: normal; 
@@ -112,7 +112,7 @@ font-variant: normal;
 font-weight: 700; 
 line-height: 21px; 
 font-family: 'Courier New', Courier, monospace;
-color: yellow;
+color: rgb(255, 179, 38);
 } 
      
 h3 { 
@@ -122,7 +122,7 @@ h3 {
  font-weight: 700; 
  line-height: 19.4px; 
  font-family: 'Courier New', Courier, monospace;
-color: yellow;
+color: rgb(255, 179, 38);
  } 
  h4 {
   font-size: 32px; 
@@ -131,7 +131,7 @@ color: yellow;
   font-weight: 700; 
   line-height: 21px; 
   font-family: 'Courier New', Courier, monospace;
-color: yellow;
+color: rgb(255, 179, 38);
  }
       
  p { 
@@ -141,7 +141,7 @@ color: yellow;
   font-weight: 400; 
   line-height: 21px; 
   font-family: 'Courier New', Courier, monospace;
-color: yellow;
+color: rgb(255, 179, 38);
 } 
 
 blockquote {  
