@@ -36,13 +36,15 @@ A website specially made for the infamous Dr.SillyStringz to keep track of his e
 * Status
 * Licensed Machine
 
-* Cloning options
-  * For cloning please use the following GitHub [tutorial](https://docs.github.com/en/enterprise/2.16/user/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-  * Place files into a single directory 
-  * Run GitBASH in directory
-  * Type "dotnet run" in GitBash to run the program
-
 ## Setup/Installation Requirements
+
+* Cloning options:
+  * For cloning please use the following GitHub [tutorial](https://docs.github.com/en/enterprise/2.16/user/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+  * Place files into a single directory. (In our case, Factory!)
+  * Run GitBASH in Factory.
+  * Navigate to the Factory directory ("cd Factory" The file tree should look something like this: "\yourfiles\Dr-SFactory.Solution\Factory")
+  * While in the Factory folder, type "dotnet run" in GitBash to run the program.
+
 
 * Database setup instructions:
   * Ensure Garrett_Brown.sql was downloaded
